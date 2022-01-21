@@ -5,11 +5,11 @@ import tkinter as tk
 import pyttsx3
 
 
-#Initialize imported packages
+#Imported package
 client = wolframalpha.Client('RXVYYY-PEGUVQT4KK')
 engine = pyttsx3.init()
 
-#Creates a window 
+#Window Initialization
 window = tk.Tk()
 window.title("Athena")
 window.configure(background="white")
