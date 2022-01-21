@@ -5,11 +5,11 @@ import tkinter as tk
 import pyttsx3
 
 
-#Imported package shit
+#Initialize imported packages
 client = wolframalpha.Client('RXVYYY-PEGUVQT4KK')
 engine = pyttsx3.init()
 
-#Window Initialization big time
+#Creates a window 
 window = tk.Tk()
 window.title("Athena")
 window.configure(background="white")
@@ -31,7 +31,7 @@ textentry.place(relx=0.5,rely=0.5,anchor = CENTER)
 #Answer Label
 LabelResult = tk.Label(window, text = "lol",bg="white",fg="black",font="Arial 20 bold")
 
-#Function for searching shit up foo
+#Function for searching stuff
 def click():
     entered_text=textentry.get()
     res = client.query(entered_text)
